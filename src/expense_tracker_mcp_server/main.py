@@ -2795,7 +2795,7 @@ if __name__ == "__main__":
     print(f"Starting ExpenseTracker MCP server on port {port}...")
 
     mcp.run(
-        transport="http",
+        transport="sse",
         host="0.0.0.0",
         port=port
     )
