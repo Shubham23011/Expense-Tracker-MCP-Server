@@ -2254,7 +2254,7 @@ print(f"Categories path: {CATEGORIES_PATH}")
 def get_turso_client_async():
     """Returns an asynchronous Turso client for async MCP tools and initialization."""
     url = TURSO_URL.replace("libsql://", "https://")
-    return libsql_client.create_client_async(url=url, auth_token=TURSO_TOKEN)
+    return libsql_client.create_client(url=url, auth_token=TURSO_TOKEN)
 
 
 # ============================================================
